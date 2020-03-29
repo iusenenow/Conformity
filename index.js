@@ -48,7 +48,7 @@ const displayDatas = async () => {
     if ((element = document.getElementById(ruleGroup))) {
       element.innerHTML += `
     <li>
-      <a class="rule-group" href='https://www.cloudconformity.com/knowledge-base/${ruleGroup}/${data.included[i].attributes.slug}.html'>${data.included[i].attributes.title}</a>
+      <a class="rule-group" href='https://www.cloudconformity.com/knowledge-base/aws/${ruleGroup}/${data.included[i].attributes.slug}.html'>${data.included[i].attributes.title}</a>
     </li>
     `;
     }
