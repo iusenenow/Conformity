@@ -6,4 +6,4 @@ Click [here](https://conformity.netlify.com/).
 * Code Format: Prettier
 * UI lib: Bootstrap 4 + Font Awesome 5
 * Test: Jest
-* Hosting: Amazon S3
+* Host: Netlify
