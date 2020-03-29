@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto' type='text/css'>
+  <link rel='stylesheet' href='style.css' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Knowledge Base</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand" href=""><img
+          src="https://www.cloudconformity.com/assets/logos/logo-trend-micro-conformity-a9f2ff7ece6ba93793cec22de96daeba86528b2f2b937e8efdebae20db47ffa5.svg"
+          alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" style="color:#3e2559" href="https://www.cloudconformity.com/knowledge-base/">Knowledge
+              Base <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"
+                href="https://www.cloudconformity.com/solutions/aws/security-compliance.html">aws</a>
+              <a class="dropdown-item"
+                href="https://www.cloudconformity.com/solutions/azure/security-compliance.html">Azure</a>
+              <a class="dropdown-item"
+                href="https://www.cloudconformity.com/solutions/gcp/security-compliance.html">Google Cloud</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.cloudconformity.com/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.cloudconformity.com/pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.cloudconformity.com/identity/sign-in.html">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn free-trial" href="https://www.cloudconformity.com/identity/sign-up.html">Free trial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Knowledge Base banner -->
+  <div class="container py-5 article mt-3">
+    <div class="row py-5">
+      <div class="col py-5">
+        <h1 class="display-4 text-white pl-5">Knowledge Base</h1>
+      </div>
+      <div class="col py-5">
+        <p class="lead pr-5">Cloud Conformity is a continuous assurance tool that provides peace of mind for
+          your
+          cloud
+          infrastructure, delivering over 520 automated best practice checks.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Knowledge base Introduction -->
+  <div class="container Knowledge-base">
+    <h1 class="display-4">Knowledge Base</h1>
+    <p class="lead">Along with continuous assurance of your infrastructure, Cloud Conformity is an educational tool,
+      providing
+      detailed resolution steps to rectify security vulnerabilities, performance and cost inefficiencies, and
+      reliability risks. The combination of real time monitoring and simplified, readily available remediation
+      information enables organisations to embrace DevOps, without the fear of introducing vulnerabilities or
+      reliability risks.
+      <br><br>
+
+      Below are the cloud providers, services and their associated rules included in the continuous assurance check by
+      Cloud Conformity. New rules are being developed every day so if there’s a particular rule or service that isn’t
+      covered, please get in touch with us and we’ll add it to the list.</p>
+  </div>
+
+  <!-- Knowledge base Cards -->
+  <div class="container pb-5 pt-3">
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="https://www.cloudconformity.com/assets/logos/logo-square-aws-b7740d9db437e8f3e88b05d346db4eefbc8ed8a3fa69509dccd51feb6bc9f880.png"
+          class="card-img-top" alt="AWS">
+        <div class="card-body text-center">
+          <div><a class='btn btn-danger mb-3' href="#">AWS supported services</a></div>
+          <div><a style="color: #c6366e; text-decoration: underline;"
+              href="https://www.cloudconformity.com/knowledge-base/aws/">View all AWS
+              rules</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.cloudconformity.com/assets/logos/logo-square-azure-59bb73b7a7a100098b296fc1be20241e242659e98bd20e0dec07487cba4ad490.png"
+          class="card-img-top" alt="Azure">
+        <div class="card-body text-center">
+          <div><a class='btn btn-danger mb-3' href="#">Azure supported services</a></div>
+          <div><a style="color: #c6366e; text-decoration: underline;"
+              href="https://www.cloudconformity.com/knowledge-base/azure/">View all Azure rules</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.cloudconformity.com/assets/logos/logo-square-trend-micro-conformity-5debb7bc01be6e756cc098cf5472388ddaecfd13d00d4fb6488eabc3067ee5b4.png"
+          class="card-img-top" alt="Conformity">
+        <div class="card-body text-center">
+          <a class='btn btn-danger mb-3' href="https://www.cloudconformity.com/knowledge-base/cloudconformity/">Cloud
+            Conformity best</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service coverage for AWS -->
+  <div class="container">
+    <div class="col-6 ml-auto mr-auto text-center mb-3">
+      <h3 class="display-5">Service coverage for</h3>
+      <img
+        src="https://www.cloudconformity.com/assets/logos/logo-square-aws-b7740d9db437e8f3e88b05d346db4eefbc8ed8a3fa69509dccd51feb6bc9f880.png"
+        class="card-img-top" alt="AWS">
+      <a class="btn btn-danger" href="https://www.cloudconformity.com/knowledge-base/aws/">View all AWS rules</a>
+    </div>
+    <div class="row aws-row my-5">
+      <div id="aws-left" class="col-sm-6">
+      </div>
+      <div id="aws-right" class="col-sm-6">
+      </div>
+    </div>
+  </div>
+
+  <!-- Service coverage for Azure -->
+  <div class="container">
+    <div class="col-6 ml-auto mr-auto text-center mb-3">
+      <h3 class="display-5">Service coverage for</h3>
+      <img
+        src="https://www.cloudconformity.com/assets/logos/logo-square-azure-59bb73b7a7a100098b296fc1be20241e242659e98bd20e0dec07487cba4ad490.png"
+        class="card-img-top" alt="Azure">
+      <a class="btn btn-danger" href="https://www.cloudconformity.com/knowledge-base/azure/">View all Azure rules</a>
+    </div>
+    <div class="row azure-row my-5">
+      <div id="azure-left" class="col-sm-6">
+      </div>
+      <div id="azure-right" class="col-sm-6">
+      </div>
+    </div>
+  </div>
+
+  <div class='bottom container text-center my-5'>
+    <p>Whether your AWS exploration is just starting to take shape, you’re mid-way through a migration or you’re already
+      running complex workloads in the cloud, Cloud Conformity offers full visibility of your infrastructure and
+      provides continuous assurance it’s secure, optimized and compliant.
+      <br><br>
+      <span>Chat with us</span> to set up your onboarding session and start a free trial.</p>
+    <a href="https://www.cloudconformity.com/knowledge-base/#chat" class="btn btn-danger">Let's Chat</a>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="container footer mb-5">
+    <div class="ml-auto mr-auto text-center mb-5">
+      <img class="aws-tech-partner"
+        src="https://www.cloudconformity.com/assets/aws-badge-156cf61e0b1747e489436be0082f82f31c9780e0acb3c926f2a0a9a06bc21aff.png"
+        alt="AWS Tech Partner">
+    </div>
+    <div class="row text-center">
+      <p class="col-6">© 2016 - 2020 Cloud Conformity Inc<br>Website version: v2.0.48<br>
+        Last update: 25 February 2020
+      </p>
+      <div class="social-links col-6 align-self-center">
+        <a href="https://www.linkedin.com/company/10621658/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCmZ9akNGr6kqEuDwgFgFDkQ"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://twitter.com/cloudconformity"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://github.com/cloudconformity/"><i class="fab fa-github fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

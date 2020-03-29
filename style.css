@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+body {
+  font-family: 'Roboto', Helvetica !important;
+  color: #442958
+}
+
+nav li {
+  padding: 0 0 0 1.2rem;
+}
+
+nav .nav-link {
+  color: #6b7c94;
+  font-size: 1.3rem;
+}
+
+nav .free-trial {
+  background-color: #c6366e;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav .free-trial:hover {
+  color:#fff;
+  background-color: #3e2559;
+}
+
+
+.article {
+  background-color: rgb(123, 83, 138);
+}
+
+.article p {
+  color: #C6ADCF;
+}
+
+.Knowledge-base {
+  font-size: 1.2rem;
+  color: #442958;
+  padding: 2rem 0;
+  margin: 1rem;
+}
+
+.Knowledge-base h1 {
+  padding: 1rem 0;
+}
+
+ul,
+li
+{
+  list-style: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rule-id {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #442958;
+}
+
+.rule-id:hover {
+  color:#442958;
+  text-decoration: underline;
+}
+
+.rule-group {
+  font-size: 1.1rem;
+  color: #6b7c94;
+}
+
+.rule-group:hover {
+  color: #6b7c94;
+  text-decoration: underline;
+}
+
+.bottom p {
+  font-size: 1.2rem;
+  color: #6b7c94;
+  padding: 1.5rem 0;
+}
+
+.bottom span {
+  color: #c6366e;
+  font-weight: 700;
+}
+
+.bottom a {
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+}
+
+.footer p {
+  color: #6b7c94;
+  font-size: 1.1rem;
+}
+
+.aws-tech-partner {
+  max-width: 200px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #6b7c94;
+  margin-left: 0.5rem;
+}
+
+.social-links a:hover {
+  color: #c6366e
+}

@@ -1,0 +1,17 @@
+{
+  "name": "conformity",
+  "version": "1.0.0",
+  "description": "conformity",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Wei",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
