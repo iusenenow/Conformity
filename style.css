@@ -119,7 +119,7 @@ li
   font-weight: 700;
 }
 
-.bottom a {
+.bottom-button {
   font-weight: 700;
   background-color: #c6366e;
   font-size: 1.1rem;
@@ -131,7 +131,7 @@ li
   cursor: pointer;
 }
 
-.service-button:hover {
+.bottom-button:hover {
   color:#fff;
   background-color: #c6366e;
   text-decoration: none;
