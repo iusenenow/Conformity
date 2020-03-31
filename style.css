@@ -6,29 +6,45 @@ body {
 }
 
 nav li {
-  padding: 0 0 0 1.2rem;
+  padding: 0 0 0 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 nav .nav-link {
   color: #6b7c94;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 nav .free-trial {
   background-color: #c6366e;
+  margin-top: 1.5rem;
   font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
+  border-radius: 30px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
 }
 
 nav .free-trial:hover {
   color:#fff;
   background-color: #3e2559;
+  text-decoration: none;
+}
+
+nav .dropdown-item {
+  color: #6b7c94;
+  font-size: 1.3rem;
 }
 
 
 .article {
   background-color: rgb(123, 83, 138);
+}
+
+.article h1 {
+  font-weight: 500;
 }
 
 .article p {
@@ -44,6 +60,22 @@ nav .free-trial:hover {
 
 .Knowledge-base h1 {
   padding: 1rem 0;
+}
+
+.service-button {
+  background-color: #c6366e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1.1rem 2rem;
+  cursor: pointer;
+}
+
+.service-button:hover {
+  color:#fff;
+  background-color: #c6366e;
+  text-decoration: none;
 }
 
 ul,
@@ -89,8 +121,22 @@ li
 
 .bottom a {
   font-weight: 700;
-  padding: 0.8rem 1.5rem;
+  background-color: #c6366e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  padding: 1.1rem 5rem;
+  cursor: pointer;
 }
+
+.service-button:hover {
+  color:#fff;
+  background-color: #c6366e;
+  text-decoration: none;
+}
+
 
 .footer p {
   color: #6b7c94;

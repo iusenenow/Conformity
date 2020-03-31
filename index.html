@@ -17,7 +17,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href=""><img
           src="https://www.cloudconformity.com/assets/logos/logo-trend-micro-conformity-a9f2ff7ece6ba93793cec22de96daeba86528b2f2b937e8efdebae20db47ffa5.svg"
           alt="Logo"></a>
@@ -26,11 +26,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item active">
             <a class="nav-link" style="color:#3e2559" href="https://www.cloudconformity.com/knowledge-base/">Knowledge
               Base <span class="sr-only">(current)</span></a>
           </li>
+          <div class="dropdown-divider"></div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -38,24 +39,33 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item"
-                href="https://www.cloudconformity.com/solutions/aws/security-compliance.html">aws</a>
+                href="https://www.cloudconformity.com/solutions/aws/security-compliance.html"><img
+                  src="https://www.cloudconformity.com/assets/logos/logo-product-aws-fe0bb3dcdf02e650014a823f03b13263b55b39a1ed4bc2449e01a74f7bf3d2d5.svg"
+                  alt="AWS"></a>
               <a class="dropdown-item"
-                href="https://www.cloudconformity.com/solutions/azure/security-compliance.html">Azure</a>
+                href="https://www.cloudconformity.com/solutions/azure/security-compliance.html"><img
+                  src="https://www.cloudconformity.com/assets/logos/logo-product-azure-25e59d27a8303021a6b7cfb01c4a25d9fa05c4b2c529bb2ee6364c771d119f41.svg"
+                  alt="Azure"></a>
               <a class="dropdown-item"
-                href="https://www.cloudconformity.com/solutions/gcp/security-compliance.html">Google Cloud</a>
+                href="https://www.cloudconformity.com/solutions/gcp/security-compliance.html"><img
+                  src="https://www.cloudconformity.com/assets/logos/logo-product-gcp-03f4a17f715b7b1fa75ea5ff8d803d8d81623fd1769eaaa0b07a3668531468e9.svg"
+                  alt="Google Cloud"></a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.cloudconformity.com/about.html">About</a>
           </li>
+          <div class="dropdown-divider"></div>
           <li class="nav-item">
             <a class="nav-link" href="https://www.cloudconformity.com/pricing.html">Pricing</a>
           </li>
+          <div class="dropdown-divider"></div>
           <li class="nav-item">
             <a class="nav-link" href="https://www.cloudconformity.com/identity/sign-in.html">Sign in</a>
           </li>
-          <li class="nav-item">
-            <a class="btn free-trial" href="https://www.cloudconformity.com/identity/sign-up.html">Free trial</a>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item mt-1">
+            <a class="free-trial" href="https://www.cloudconformity.com/identity/sign-up.html">Free trial</a>
           </li>
         </ul>
       </div>
@@ -63,8 +73,8 @@
   </nav>
 
   <!-- Knowledge Base banner -->
-  <div class="container py-5 article mt-3">
-    <div class="row py-5">
+  <div class="container-fluid py-5 article mt-3">
+    <div class="row py-5 mx-5">
       <div class="col py-5">
         <h1 class="display-4 text-white pl-5">Knowledge Base</h1>
       </div>
@@ -95,13 +105,15 @@
 
   <!-- Knowledge base Cards -->
   <div class="container pb-5 pt-3">
-    <div class="card-group">
+    <div class="card-group row">
       <div class="card">
         <img
           src="https://www.cloudconformity.com/assets/logos/logo-square-aws-b7740d9db437e8f3e88b05d346db4eefbc8ed8a3fa69509dccd51feb6bc9f880.png"
           class="card-img-top" alt="AWS">
         <div class="card-body text-center">
-          <div><a class='btn btn-danger mb-3' href="#">AWS supported services</a></div>
+          <div><a class='mb-3 btn btn-danger' style="background-color: #c6366e" href="#service-aws">AWS supported
+              services</a>
+          </div>
           <div><a style="color: #c6366e; text-decoration: underline;"
               href="https://www.cloudconformity.com/knowledge-base/aws/">View all AWS
               rules</a>
@@ -114,7 +126,9 @@
           src="https://www.cloudconformity.com/assets/logos/logo-square-azure-59bb73b7a7a100098b296fc1be20241e242659e98bd20e0dec07487cba4ad490.png"
           class="card-img-top" alt="Azure">
         <div class="card-body text-center">
-          <div><a class='btn btn-danger mb-3' href="#">Azure supported services</a></div>
+          <div><a class='mb-3 btn btn-danger' style="background-color: #c6366e" href="#service-azure">Azure supported
+              services</a>
+          </div>
           <div><a style="color: #c6366e; text-decoration: underline;"
               href="https://www.cloudconformity.com/knowledge-base/azure/">View all Azure rules</a></div>
         </div>
@@ -125,7 +139,8 @@
           src="https://www.cloudconformity.com/assets/logos/logo-square-trend-micro-conformity-5debb7bc01be6e756cc098cf5472388ddaecfd13d00d4fb6488eabc3067ee5b4.png"
           class="card-img-top" alt="Conformity">
         <div class="card-body text-center">
-          <a class='btn btn-danger mb-3' href="https://www.cloudconformity.com/knowledge-base/cloudconformity/">Cloud
+          <a class='mb-3 btn btn-danger' style="background-color: #c6366e"
+            href="https://www.cloudconformity.com/knowledge-base/cloudconformity/">Cloud
             Conformity best</a>
         </div>
       </div>
@@ -133,13 +148,13 @@
   </div>
 
   <!-- Service coverage for AWS -->
-  <div class="container">
+  <div class="container" id="service-aws">
     <div class="col-6 ml-auto mr-auto text-center mb-3">
       <h3 class="display-5">Service coverage for</h3>
       <img
         src="https://www.cloudconformity.com/assets/logos/logo-square-aws-b7740d9db437e8f3e88b05d346db4eefbc8ed8a3fa69509dccd51feb6bc9f880.png"
-        class="card-img-top" alt="AWS">
-      <a class="btn btn-danger" href="https://www.cloudconformity.com/knowledge-base/aws/">View all AWS rules</a>
+        class="card-img-top mb-3" alt="AWS">
+      <a class="service-button" href="https://www.cloudconformity.com/knowledge-base/aws/">View all AWS rules</a>
     </div>
     <div class="row aws-row my-5">
       <div id="aws-left" class="col-sm-6">
@@ -150,13 +165,13 @@
   </div>
 
   <!-- Service coverage for Azure -->
-  <div class="container">
+  <div class="container" id="service-azure">
     <div class="col-6 ml-auto mr-auto text-center mb-3">
       <h3 class="display-5">Service coverage for</h3>
       <img
         src="https://www.cloudconformity.com/assets/logos/logo-square-azure-59bb73b7a7a100098b296fc1be20241e242659e98bd20e0dec07487cba4ad490.png"
-        class="card-img-top" alt="Azure">
-      <a class="btn btn-danger" href="https://www.cloudconformity.com/knowledge-base/azure/">View all Azure rules</a>
+        class="card-img-top mb-3" alt="Azure">
+      <a class="service-button" href="https://www.cloudconformity.com/knowledge-base/azure/">View all Azure rules</a>
     </div>
     <div class="row azure-row my-5">
       <div id="azure-left" class="col-sm-6">
@@ -167,12 +182,13 @@
   </div>
 
   <div class='bottom container text-center my-5'>
-    <p>Whether your AWS exploration is just starting to take shape, you’re mid-way through a migration or you’re already
+    <p class="mb-4">Whether your AWS exploration is just starting to take shape, you’re mid-way through a migration or
+      you’re already
       running complex workloads in the cloud, Cloud Conformity offers full visibility of your infrastructure and
       provides continuous assurance it’s secure, optimized and compliant.
       <br><br>
       <span>Chat with us</span> to set up your onboarding session and start a free trial.</p>
-    <a href="https://www.cloudconformity.com/knowledge-base/#chat" class="btn btn-danger">Let's Chat</a>
+    <a href="https://www.cloudconformity.com/knowledge-base/#chat" class="bottom-button">Let's Chat</a>
   </div>
 
 
